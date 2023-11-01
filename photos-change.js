@@ -3,7 +3,7 @@
     const nextBtn = document.getElementById('nextBtn');
     const prevBtn = document.getElementById('prevBtn');
     let imageIndex = 1;
-    const totalImages = 171;
+    const totalImages = 163;
 
     for (let i = 1; i <= totalImages; i++) {
         const img = document.createElement('img');
