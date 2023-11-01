@@ -2,7 +2,7 @@ const galleryGrid = document.getElementById('gallery-grid');
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modal-image');
 let currentImageIndex;
-const totalImages = 178;
+const totalImages = 171;
 
 function loadImages() {
     for (let i = 1; i <= totalImages; i++) {
