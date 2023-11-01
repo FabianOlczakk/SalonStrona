@@ -16,10 +16,13 @@
     function showImage() {
         const images = document.querySelectorAll('.carousel img');
         images.forEach((img, index) => {
-            const offset = (index - imageIndex + 1) * 100;
-            img.style.transform = `translateX(${offset}%)`;
+            if (index === imageIndex - 1) {
+                img.classList.add('active');
+            } else {
+                img.classList.remove('active');
+            }
         });
-    }          
+    }                       
 
     nextBtn.addEventListener('click', () => {
         if (imageIndex < totalImages) {
