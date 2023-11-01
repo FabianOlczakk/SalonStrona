@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="gallery-style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT Sans Narrow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Salon Fryzjerski Joanna Olczak">
+            </a>
+        </div>        
+        
+        <nav>
+            <ul>
+                <li><a href="shop.html">SKLEP</a></li>
+                <li><a href="price.html">CENNIK</a></li>
+                <li><a href="gallery.html">GALERIA</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100063702904543" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/olczak.joanna_salon_fryzjerski/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+
+    </header>
+
+    <h2>
+        GALERIA ZDJĘĆ
+    </h2>
+
+    <div id="gallery-grid"></div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

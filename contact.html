@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT Sans Narrow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Salon Fryzjerski Joanna Olczak">
+            </a>
+        </div>        
+        
+        <nav>
+            <ul>
+                <li><a href="shop.html">SKLEP</a></li>
+                <li><a href="price.html">CENNIK</a></li>
+                <li><a href="gallery.html">GALERIA</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100063702904543" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/olczak.joanna_salon_fryzjerski/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+
+    </header>
+
+    <h2>SKONTAKTUJ SIĘ Z NAMI</h2>
+
+    <div class="contact-form">
+        <form action="ścieżka_do_twojego_skryptu.php" method="post">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Twój e-mail">
+            </div>
+            <div class="form-group">
+                <label for="subject">Temat:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Temat wiadomości">
+            </div>
+            <div class="form-group">
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Twoja wiadomość"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Wyślij</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

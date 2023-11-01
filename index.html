@@ -7,22 +7,24 @@
     <title>Salon Fryzjerski Joanna Olczak</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=PT Sans Narrow' rel='stylesheet'>
-
+    <link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'>
 </head>
 
 <body>
     <header>
 
         <div class="logo">
-            <img src="img/logo.png" alt="Salon Fryzjerski Joanna Olczak">
-        </div>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Salon Fryzjerski Joanna Olczak">
+            </a>
+        </div>        
         
         <nav>
             <ul>
-                <li><a href="#about-us">O NAS</a></li>
-                <li><a href="#gallery">GALERIA</a></li>
-                <li><a href="#price">CENNIK</a></li>
-                <li><a href="#contact">KONTAKT</a></li>
+                <li><a href="shop.html">SKLEP</a></li>
+                <li><a href="price.html">CENNIK</a></li>
+                <li><a href="gallery.html">GALERIA</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
             </ul>
         </nav>
 
@@ -62,25 +64,60 @@
         <section id="gallery">
             <div class="carousel">
                 <button id="prevBtn">←</button>
-                <div class="carousel-images">
-                </div>
+                <div class="carousel-images"></div>
                 <button id="nextBtn">→</button>
             </div>
         </section>
-    </div>    
-    
-    <section id="price">
-        <h2>Cennik</h2>
-        <!-- Treść sekcji Cennik -->
-    </section>
-    
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <!-- Treść sekcji Kontakt -->
-    </section>
+    </div>
 
-    <script src="gallery.js"></script>
+    <div id="to-do">
+        <h2>
+            NASZ ZESPÓŁ
+        </h2>
+        <p>
+            Tutaj beda zdjecia wszystkich pracownikow i krotkie opisy o nich.
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>Informacje kontaktowe</h3>
+                <ul>
+                    <li><img src="img/call.png"> +48 607 952 012</li>
+                    <li><img src="img/email.png"> kontakt@salonolczak.pl</li>
+                    <li><img src="img/adress.png"> ul. Niepodległości 7e, 66-470 Kostrzyn nad Odrą</li>
+                </ul>
+            </div>
+            <div class="footer-section opening-hours">
+                <h3>Godziny otwarcia</h3>
+                <table>
+                    <tr>
+                        <td>Wtorek - Piątek:</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sobota:</td>
+                        <td>8:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Niedziela - Poniedziałek:</td>
+                        <td>zamknięte</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer-social-media">
+            <a href="https://www.facebook.com/profile.php?id=100063702904543" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/olczak.joanna_salon_fryzjerski/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Salon Fryzjerski Joanna Olczak. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>    
+
+    <script src="photos-change.js"></script>
 
 </body>
-
 </html>
